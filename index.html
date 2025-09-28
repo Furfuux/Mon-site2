@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Mon site perso</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #222;
+text-align: center;
+margin: 50px;
+transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+color: #2c3e50;
+}
+
+.carte {
+background: white;
+padding: 20px;
+margin: 20px auto;
+width: 60%;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Mode sombre */
+.dark {
+background-color: #222;
+color: #f4f4f4;
+}
+.dark .carte {
+background: #333;
+}
+
+/* Bouton */
+button {
+margin-top: 20px;
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+background: #2c3e50;
+color: white;
+}
+button:hover {
+background: #1a242f;
+}
+</style>
+</head>
+<body>
+<h1>Bienvenue sur mon site 🌟</h1>
+
+<div class="carte">
+<h2>À propos de moi</h2>
+<p>Je m'appelle Ahmed, je suis en Terminale TMA et je veux me réorienter en informatique (BTS SIO).</p>
+</div>
+
+<div class="carte">
+<h2>Mon projet</h2>
+<p>J'ai commencé à apprendre l’informatique en autodidacte. Ce site est mon premier projet.</p>
+</div>
+
+<div class="carte">
+<h2>Contact</h2>
+<p>Email : elassadahmedpro@gmail.com</p>
+</div>
+
+<button onclick="changerTheme()">Changer de thème</button>
+
+<script>
+function changerTheme() {
+document.body.classList.toggle("dark");
+}
+</script>
+</body>
+</html>
+h1 {
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<button onclick="alert('Merci de visiter mon site !')">Clique sur moi</button>
+<nav>
+  <a href="#apropos">À propos</a> |
+  <a href="#projet">Projet</a> |
+  <a href="#contact">Contact</a>
+</nav>
+<p>instagram : <a href="https://www.instagram.com/a___d212">tonpseudo</a></p>
